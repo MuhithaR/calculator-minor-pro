@@ -40,7 +40,7 @@ body {
 .btn:hover { transform: scale(1.02); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
 .btn:active { transform: scale(0.98); }
 
-/* AC button red - FIXED with higher specificity */
+
 button.btn-ac,
 .btn-ac {
     background: rgb(255, 170, 0) !important;
@@ -53,7 +53,7 @@ button.btn-ac:hover {
     box-shadow: 0 4px 12px rgba(22, 21, 21, 0.4) !important;
 }
 
-/* Number buttons with black border */
+
 .btn-number {
     border: 2px solid rgb(0, 0, 0) !important;
     background: lightgray !important;
@@ -64,3 +64,4 @@ button.btn-ac:hover {
     border-color: black !important;
     background: silver !important;
 }
+
