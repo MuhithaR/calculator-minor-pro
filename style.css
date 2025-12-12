@@ -1,0 +1,66 @@
+/* Clean calculator styling using Flexbox */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: linear-gradient(135deg, #37ffeb 0%, #f704b6 100%);
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.display {
+    background: black;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: right;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.btn {
+    height: 70px !important;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: all 0.2s;
+    border: none;
+}
+
+.btn:hover { transform: scale(1.02); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+.btn:active { transform: scale(0.98); }
+
+/* AC button red - FIXED with higher specificity */
+button.btn-ac,
+.btn-ac {
+    background: rgb(255, 170, 0) !important;
+    color: white !important;
+}
+
+.btn-ac:hover,
+button.btn-ac:hover {
+    background: rgb(0, 0, 0) !important;
+    box-shadow: 0 4px 12px rgba(22, 21, 21, 0.4) !important;
+}
+
+/* Number buttons with black border */
+.btn-number {
+    border: 2px solid rgb(0, 0, 0) !important;
+    background: lightgray !important;
+    color: black !important;
+}
+
+.btn-number:hover {
+    border-color: black !important;
+    background: silver !important;
+}
