@@ -36,7 +36,7 @@ function clearDisplay() {
     updateDisplay();
 }
 
-// FIXED: Square operation - shows ONLY input number ^2, no "x²"
+//  Square operation 
 function squareNumber() {
     previousInput = currentInput;
     operation = '^2';
@@ -56,7 +56,7 @@ function selectOperation(newOperation) {
     updateDisplay();
 }
 
-// Calculate result - FIXED: Square works properly
+// Calculate result 
 function calculate() {
     if (previousInput === null || operation === null) return;
     
@@ -96,7 +96,7 @@ function calculate() {
             break;
             
         case '^2':
-            result = prev * prev;  // Square works!
+            result = prev * prev;  
             break;
             
         default:
@@ -125,3 +125,4 @@ document.querySelectorAll('.btn-secondary').forEach(btn => {
 document.querySelector('.btn-ac').onclick = clearDisplay;
 document.querySelector('.btn-square').onclick = squareNumber;
 document.querySelector('.btn-equals').onclick = calculate;
+
